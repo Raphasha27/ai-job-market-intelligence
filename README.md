@@ -1,6 +1,19 @@
 # AI Job Market Intelligence Platform (Advanced)
 
-A sophisticated platform for aggregating job postings, analyzing skill trends, and providing career recommendations using AI.
+**Developed by Raphasha27**
+
+## Screenshots
+### Intelligence Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### Job Aggregator
+![Jobs](./screenshots/jobs.png)
+
+### SA Tech Heatmap
+![Heatmap](./screenshots/heatmap.png)
+
+### AI Resume Matcher
+![Matcher](./screenshots/matcher.png)
 
 ## Features
 - **Job Aggregation**: Scraping/Connecting to job boards.
