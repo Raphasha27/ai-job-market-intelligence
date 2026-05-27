@@ -1,71 +1,59 @@
-# 🏛️ KIROV DYNAMICS | AI JOB MARKET INTELLIGENCE
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:00ccaa&height=200&section=header&text=AI%20Job%20Market%20Intelligence&fontSize=40&fontColor=ffffff&fontAlignY=40&desc=Advanced%20AI%20Job%20Market%20Analytics%20%26%20Forecasting&descAlignY=65" width="100%"/>
 
-📊 **Agentic Insights for the Future of Work**
+  [![Status](https://img.shields.io/badge/Status-Active-00ccaa?style=for-the-badge)](#)
+  [![Tech](https://img.shields.io/badge/Tech-JavaScript-F7DF1E?style=for-the-badge&logo=javascript)](#)
+</div>
 
-[![Status](https://img.shields.io/badge/Status-🚀_Active-3fb950?style=for-the-badge&labelColor=0d1117)](https://github.com/Raphasha27)
-[![Health Hub](https://img.shields.io/badge/Health_Hub-Hardened-blue?style=for-the-badge&labelColor=0d1117)](https://github.com/Raphasha27/Health-Hub)
-
-> **"Mapping the Neural Landscape of Global Employment."**
-
----
-
-## 📖 Overview
-
-**AI Job Market Intelligence** is a high-fidelity analytics platform designed to track, analyze, and predict trends in the global AI and technology job markets. By scraping real-time data and applying heuristic modeling, it provides a strategic "Command Center" for career planning and institutional labor analysis.
+## 📊 Overview
+**AI Job Market Intelligence** is an advanced platform featuring heuristic trend forecasting and career strategic intelligence. It tracks demand, skill requirements, and geographic trends in the AI engineering job market.
 
 ---
 
-## 🏗️ Architecture & Pipeline
+## 📐 System Architecture Demo
 
-The system operates a continuous data-ingestion and analysis pipeline.
+The intelligence platform ingests data from multiple tech job boards, analyzes it through a NLP pipeline, and visualizes the heuristics on a dynamic dashboard.
 
 ```mermaid
 graph TD
-    Sources[Global Job Boards / APIs] -->|Scrape| Ingest[Data Ingestion Engine]
-    Ingest -->|Pre-process| Clean[Neural Data Cleaning]
-    Clean -->|Heuristic Modeling| AI[Job Trend Analysis Engine]
-    AI -->|Predictive Scoring| Analytics[Market Intelligence Hub]
-    Analytics -->|Visualize| Dashboard[Glassmorphic UI]
-    Dashboard -->|Strategy| User((Decision Maker))
+    %% Styling
+    classDef scraper fill:#00ccaa,stroke:#fff,stroke-width:2px,color:#000
+    classDef engine fill:#050d12,stroke:#00ccaa,stroke-width:2px,color:#fff
+    classDef viz fill:#111,stroke:#b39ddb,stroke-width:1px,color:#fff
+
+    %% Nodes
+    S1[LinkedIn Scraper]:::scraper
+    S2[Indeed Scraper]:::scraper
+    
+    NLP[NLP Parsing Engine<br>Skill Extraction]:::engine
+    DB[(Market DB<br>Time-Series Data)]:::engine
+    
+    Dash[Next.js Dashboard<br>Heuristic Visualization]:::viz
+
+    %% Relationships
+    S1 -->|Raw Listings| NLP
+    S2 -->|Raw Listings| NLP
+    NLP -->|Structured Skills| DB
+    DB -->|GraphQL API| Dash
 ```
 
----
-
-## ✨ Features
-
-- **📊 Real-time Trend Analysis**: Tracks the rise and fall of specific AI skills (e.g., LLM Engineering, Neural Architecture) in the global market.
-- **🗺️ Geographic Heatmaps**: Visualizes high-growth tech hubs across South Africa and the globe.
-- **🤖 Skill Gap Forecasting**: Uses Gemini-powered insights to predict which skills will be in highest demand in the next 18-24 months.
-- **🛡️ Sovereign Security**: Hardened via Health-Hub for autonomous status integrity and zero-noise CI/CD.
+### 🧠 Analytics Pipeline Demonstration
+1. **Data Ingestion:** Automated scraping agents collect thousands of AI job listings daily.
+2. **Processing:** The NLP Engine extracts core skills (e.g., "PyTorch", "LLMOps", "RAG") and normalizes job titles.
+3. **Forecasting:** Heuristic algorithms predict the rise and fall of specific technology requirements over the next 12-24 months.
 
 ---
 
-## 🛠️ Technology Stack
+## ⚡ Key Features
+- **Skill Demand Forecasting:** Identify which AI skills are trending up.
+- **Salary Band Analytics:** Aggregated salary data based on location and seniority.
+- **Automated Data Pipelines:** Built for reliability and continuous intelligence gathering.
 
-| Layer | Technology |
-| :--- | :--- |
-| **Backend** | Python / FastAPI (Heuristic Modeling) |
-| **Frontend** | React / Next.js (Glassmorphic Dashboard) |
-| **Intelligence** | Google Gemini (Trend Forecasting) |
-| **Hardening** | Kirov Health-Hub Status Injection |
-
----
-
-## 🚀 Getting Started
-
-```bash
-# Clone the repository
-git clone https://github.com/Raphasha27/ai-job-market-intelligence.git
-
-# Launch the Intelligence Hub
-cd backend && pip install -r requirements.txt && uvicorn main:app
-cd frontend && npm install && npm run dev
-```
+## 🗺️ Roadmap
+- [x] Standardize repository branding and architecture diagrams.
+- [ ] Add real-time streaming to the Next.js dashboard.
+- [ ] Implement deeper integration with Anthropic Claude for job description summarization.
 
 ---
-
-## 📜 License
-MIT
-
----
-*Architected and Engineered by Raphasha27 - Kirov Dynamics 2026.*
+**Innovative. Performant. Sovereign.**
+*Built by Koketso Raphasha (Raphasha27)*
