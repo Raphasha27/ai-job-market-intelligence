@@ -22,13 +22,13 @@ graph TD
     classDef viz fill:#111,stroke:#b39ddb,stroke-width:1px,color:#fff
 
     %% Nodes
-    S1[LinkedIn Scraper]:::scraper
-    S2[Indeed Scraper]:::scraper
+    S1["LinkedIn Scraper"]:::scraper
+    S2["Indeed Scraper"]:::scraper
     
-    NLP[NLP Parsing Engine<br>Skill Extraction]:::engine
-    DB[(Market DB<br>Time-Series Data)]:::engine
+    NLP["NLP Parsing Engine<br>Skill Extraction"]:::engine
+    DB["(Market DB<br>Time-Series Data)"]:::engine
     
-    Dash[Next.js Dashboard<br>Heuristic Visualization]:::viz
+    Dash["Next.js Dashboard<br>Heuristic Visualization"]:::viz
 
     %% Relationships
     S1 -->|Raw Listings| NLP
