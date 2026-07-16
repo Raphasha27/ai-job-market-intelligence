@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
-Advanced AI job market analytics platform with skill demand forecasting, job aggregation, a South Africa tech heatmap, and an AI-powered resume matcher.
+Advanced AI job market analytics platform with skill demand forecasting, job aggregation, a South Africa tech heatmap, and an Data-driven resume matcher.
 
 ## Architecture
 
@@ -72,3 +72,4 @@ A static landing page (`index.html`) also showcases the system architecture and 
 ## License
 
 MIT — see [LICENSE](./LICENSE).
+
